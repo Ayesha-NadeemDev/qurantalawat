@@ -120,7 +120,7 @@ const SurahList: React.FC = () => {
                 className={`group cursor-pointer rounded-2xl p-5 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl ${
                   isDarkMode
                     ? 'bg-gray-800 hover:bg-gray-700 border border-gray-700'
-                    : 'bg-white hover:bg-gradient-to-br hover:from-green-50 hover:to-emerald-50 border border-gray-200 shadow-md'
+                    : 'bg-white hover:bg-linear-to-br hover:from-green-50 hover:to-emerald-50 border border-gray-200 shadow-md'
                 }`}
               >
                 {/* Surah Number */}

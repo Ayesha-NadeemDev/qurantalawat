@@ -72,8 +72,8 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         
         {/* Logo and Website Name - LEFT SIDE */}
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-md">
+        <div className="flex items-center gap-3 shrink-0">
+          <div className="w-12 h-12 rounded-full overflow-hidden bg-linear-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-md">
             <img 
               src="/LOGO.png" 
               alt="Quran Talawat Logo" 
@@ -129,7 +129,7 @@ const Navbar: React.FC = () => {
         {/* Dark/Light Mode Toggle - FAR RIGHT */}
         <button
           onClick={toggleDarkMode}
-          className={`relative p-2.5 rounded-full transition-all duration-300 hover:scale-110 flex-shrink-0 ${
+          className={`relative p-2.5 rounded-full transition-all duration-300 hover:scale-110 shrink-0 ${
             isDarkMode 
               ? 'bg-gray-700 text-yellow-400 hover:bg-gray-600' 
               : 'bg-green-100 text-green-700 hover:bg-green-200'

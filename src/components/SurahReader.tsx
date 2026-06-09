@@ -216,7 +216,7 @@ const SurahReader: React.FC<SurahReaderProps> = ({ surahId }) => {
             {!isPlayingFullSurah && !playingAyah ? (
               <button
                 onClick={playFullSurah}
-                className="px-6 py-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:scale-105 transition-all flex items-center gap-2 shadow-lg"
+                className="px-6 py-2 bg-linear-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:scale-105 transition-all flex items-center gap-2 shadow-lg"
               >
                 <span>🎧</span>
                 Listen Full Surah
@@ -394,7 +394,7 @@ const SurahReader: React.FC<SurahReaderProps> = ({ surahId }) => {
             onClick={!isPlayingFullSurah && !playingAyah ? playFullSurah : stopAudio}
             className={`px-6 py-2 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg ${
               !isPlayingFullSurah && !playingAyah
-                ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white hover:scale-105'
+                ? 'bg-linear-to-r from-green-500 to-emerald-600 text-white hover:scale-105'
                 : 'bg-red-500 text-white hover:bg-red-600'
             }`}
           >

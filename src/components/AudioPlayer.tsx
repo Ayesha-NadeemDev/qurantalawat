@@ -122,14 +122,14 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
   if (loading) {
     return (
-      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 shadow-lg z-50">
+      <div className="fixed bottom-0 left-0 right-0 bg-linear-to-r from-green-600 to-emerald-700 text-white p-4 shadow-lg z-50">
         <div className="text-center">Loading audio...</div>
       </div>
     );
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-600 to-emerald-700 text-white p-4 shadow-lg z-50">
+    <div className="fixed bottom-0 left-0 right-0 bg-linear-to-r from-green-600 to-emerald-700 text-white p-4 shadow-lg z-50">
       <div className="max-w-7xl mx-auto">
         {/* Close button */}
         {onClose && (
@@ -158,7 +158,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
           {/* Play/Pause Button */}
           <button
             onClick={togglePlay}
-            className="w-12 h-12 rounded-full bg-white text-green-600 flex items-center justify-center hover:scale-110 transition-transform flex-shrink-0"
+            className="w-12 h-12 rounded-full bg-white text-green-600 flex items-center justify-center hover:scale-110 transition-transform shrink-0"
           >
             {isPlaying ? (
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
